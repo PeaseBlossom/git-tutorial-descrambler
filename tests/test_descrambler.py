@@ -8,8 +8,8 @@ class TestDescrambler(unittest.TestCase):
     """
 
     def test_descrambler1(self):
-        input_lines = ['Lyyk yn mo wyrks, oe mighto, and despair!']
-        expected_lines = ['Look on my works, ye mighty, and despair!']
+        input_lines = ['Lyyk yn mo wyrks, oe mighto, and despair!\n']
+        expected_lines = ['Look on my works, ye mighty, and despair!\n']
         output_lines = descrambler1.descramble(input_lines)
         self.assertEqual(expected_lines, output_lines)
 
