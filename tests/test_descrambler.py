@@ -7,9 +7,11 @@ class TestDescrambler(unittest.TestCase):
     Contains tests for the descrambler package.
     """
 
+
     def test_descrambler1(self):
-        input_lines = ['\n']
-        expected_lines = ['\n']
+        input_lines = ['My Dearizzle Moodizzle Indigo,\n']
+        expected_lines = ['My Dear Mood Indigo,\n']
+
         output_lines = descrambler1.descramble(input_lines)
         self.assertEqual(expected_lines, output_lines)
 

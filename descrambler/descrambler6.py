@@ -1,6 +1,10 @@
 def descramble(lines):
     for i, line in enumerate(lines):
         new_line = line.rstrip()
+        if line.endswith('?\n'):
+            continue
+
+        new_line = new_line.replace('izzle', '')
         lines[i] = new_line + "\n"
     return lines
 
