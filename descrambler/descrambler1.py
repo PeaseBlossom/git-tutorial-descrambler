@@ -1,9 +1,14 @@
 def descramble(lines):
+    """
+    Descrambles the given lines of text: replaces all 'y' with 'o' and vice versa.
+    :param lines: list of lines of text
+    :return: descrambled lines of text
+    """
     for i, line in enumerate(lines):
         new_line = line.rstrip()
 
         # replace y with o and o with y
-        new_line = new_line.replace('y', 'x').replace('o', 'y').replace('x', 'o')
+        new_line = new_line.replace('y', '*').replace('o', 'y').replace('*', 'o')
 
         lines[i] = new_line + "\n"
     return lines
