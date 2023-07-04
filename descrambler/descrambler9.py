@@ -1,4 +1,7 @@
 def descramble(lines):
+    for i, line in enumerate(lines):
+        new_line = line.rstrip()
+        lines[i] = new_line + "\n"
     return lines
 
 
