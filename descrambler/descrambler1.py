@@ -1,6 +1,10 @@
 def descramble(lines):
     for i, line in enumerate(lines):
         new_line = line.rstrip()
+
+        # replace y with o and o with y
+        new_line = new_line.replace('y', 'x').replace('o', 'y').replace('x', 'o')
+
         lines[i] = new_line + "\n"
     return lines
 
