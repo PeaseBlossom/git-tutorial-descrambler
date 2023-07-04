@@ -1,6 +1,12 @@
 def descramble(lines):
+    """
+    Reverses the word order of each line. Words are seperated by spaces.
+    :param lines:
+    :return: lines
+    """
     for i, line in enumerate(lines):
-        new_line = line.rstrip()
+        reversed_line = line.rstrip().split(" ")[::-1]
+        new_line = " ".join(reversed_line)
         lines[i] = new_line + "\n"
     return lines
 
