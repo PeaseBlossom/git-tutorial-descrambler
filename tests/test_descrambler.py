@@ -13,6 +13,12 @@ class TestDescrambler(unittest.TestCase):
         output_lines = descrambler1.descramble(input_lines)
         self.assertEqual(expected_lines, output_lines)
 
+    def test_descrambler12(self):
+        input_lines = ['Mo dayr Meskiwyynzha']
+        expected_lines = ['My dear Miskowaanzhe']
+        output_lines = descrambler12.descramble(input_lines)
+        self.assertEqual(expected_lines, output_lines)
+
 
 if __name__ == '__main__':
     unittest.main()
